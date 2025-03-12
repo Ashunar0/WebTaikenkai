@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #16161a;
+  color: white;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  color: white;
+}
+
+header .container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin-right: 40px;
+}
+
+header ul li a {
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: thistle;
+}
+
+main #hero {
+  background-image: url(./images/image1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+main #hero::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+main #hero .text {
+  width: 100%;
+  max-width: 1280px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #hero h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+main #hero p {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+main button {
+  font-size: 18px;
+  padding: 20px 16px 24px 16px;
+  margin: 20px 0;
+  background-color: #ce8d62;
+  border: none;
+  width: 150px;
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+main button:hover {
+  background-color: thistle;
+}
+
+main .title {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto 50px;
+}
+
+main .title h2 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+main .title h6 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+main .title hr {
+  width: 70%;
+  border: solid 1px #ce8d62;
+}
+
+main #about {
+  width: 90%;
+  max-width: 1280px;
+  margin: 150px auto;
+}
+
+main #about .container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main #about .text {
+  width: 40%;
+}
+
+main #about p {
+  font-size: 16px;
+  line-height: 2;
+  margin: 0 20px 0 0;
+}
+
+main #about img {
+  width: 50%;
+}
+
+main #business .container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 100px auto 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+main #business .col {
+  width: 30%;
+  border: solid 1px #ce8d62;
+  border-radius: 2px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main #business .col h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main #business .col p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+main #business .col img {
+  width: 100%;
+}
+
+main #news .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 150px auto 150px;
+}
+
+main #news ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main #news ul li {
+  border: solid 1px thistle;
+  margin-bottom: 20px;
+  padding: 16px 24px;
+}
+
+main #news .date {
+  color: #ce8d62;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+main #contact .container {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto 150px;
+}
+
+main #contact form {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+main #contact label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+main #contact input,
+main #contact textarea {
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 30px;
+  color: #16161a;
+  border-radius: 5px;
+}
+
+main #contact input[type="submit"] {
+  text-align: center;
+  background-color: #ce8d62;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 16px 22px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+main #contact input[type="submit"]:hover {
+  background-color: thistle;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}

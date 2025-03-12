@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- リセットCSS 読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
+    />
+    <!-- CSS 読み込み -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Tech.com</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="text">
+          <h1>テクノロジーで、世界をもっとシンプルに。</h1>
+          <p>
+            Innovative solutions that simplify, enhance, and transform the
+            digital world.
+          </p>
+          <button>もっと見る</button>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="text">
+            <div class="title">
+              <h2>About Us</h2>
+              <h6>会社概要</h6>
+              <hr />
+            </div>
+            <p>
+              私たちは、最新のテクノロジーを活用し、シンプルでスマートなソリューションを提供するIT企業です。<br />
+              <br />
+              ユーザーにとって直感的で使いやすいシステムを開発し、ビジネスの成長とデジタル変革を支援します。未来を形作るために、常に新しい価値を創造し続けます。
+            </p>
+          </div>
+          <img src="./images/image2.png" alt="" />
+        </div>
+      </section>
+
+      <section id="business">
+        <div class="title">
+          <h2>Business</h2>
+          <h6>事業内容</h6>
+          <hr />
+        </div>
+        <div class="container">
+          <div class="col">
+            <h3>Webシステム開発</h3>
+            <p>
+              企業向け業務システムからECサイトまで、スケーラブルで柔軟なWebシステムを開発。<br />
+              <br />
+              効率的な運用を支える最適なソリューションを提供します。
+            </p>
+            <img src="./images/image3.png" alt="" />
+          </div>
+
+          <div class="col">
+            <h3>モバイルアプリ開発</h3>
+            <p>
+              iOS・Androidアプリの企画・開発を行い、ユーザーに最適な体験を届けます。<br />
+              <br />
+              UI/UXデザインからバックエンド開発まで一貫して対応。
+            </p>
+            <img src="./images/image4.png" alt="" />
+          </div>
+
+          <div class="col">
+            <h3>AI・データ活用支援</h3>
+            <p>
+              機械学習やデータ解析を活用し、業務効率化や新たなビジネス価値の創出をサポート。<br />
+              <br />
+              企業のDX推進を技術面から支援します。
+            </p>
+            <img src="./images/image5.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="news">
+        <div class="container">
+          <div class="title">
+            <h2>NEWS</h2>
+            <h6>お知らせ</h6>
+            <hr />
+          </div>
+          <ul>
+            <li>
+              <p class="date">2025.02.26</p>
+              <p class="content">
+                自社開発のAIチャットボットサービスをリリースしました。
+              </p>
+            </li>
+            <li>
+              <p class="date">2025.02.15</p>
+              <p class="content">
+                クラウドソリューションの新機能を追加しました
+              </p>
+            </li>
+            <li>
+              <p class="date">2025.01.30</p>
+              <p class="content">
+                業務システム導入事例インタビューを公開しました。。
+              </p>
+            </li>
+            <li>
+              <p class="date">2024.12.25</p>
+              <p class="content">本社オフィスを移転しました。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="title">
+          <h2>CONTACT</h2>
+          <h6>お問い合わせ</h6>
+          <hr />
+        </div>
+        <div class="container">
+          <form action="./submit/php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">e-Mail</label>
+            <input type="text" id="email" name="email" required />
+            <label for="content">Content</label>
+            <textarea id="content" name="content" rows="6"></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Tech.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
