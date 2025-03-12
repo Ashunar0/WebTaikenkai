@@ -8,10 +8,10 @@
 
 ## 準備
 
-体験会の前に、VScode に必要な拡張機能をインストールする
+体験会の前に、VScode に必要な拡張機能をインストールする。
+2 以下はオプション。あると便利だが、なくても問題ない。
 
 1. Live Server
-   (以下はオプション)
 2. Auto Close Tag
 3. Auto Rename Tag
 4. Prettier - Code formatter
