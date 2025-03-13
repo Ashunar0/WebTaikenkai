@@ -6,9 +6,9 @@
 
 /* コピペ用コード */
 /*
-body{
-  background-size: cover;
+body {
   background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
 }
@@ -33,7 +33,12 @@ main {
   color: white;
 }
 
+main button {
+  background-color: #ce8d62;
+}
+
 main button:hover {
   background-color: thistle;
+  transform: translateY(4px);
 }
 */
