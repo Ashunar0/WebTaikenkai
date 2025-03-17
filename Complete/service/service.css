@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #16161a;
+  color: white;
+}
+
+header {
+  width: 100%;
+  z-index: 5;
+  color: white;
+}
+
+header .container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#hero {
+  margin-bottom: 100px;
+}
+
+#hero .container {
+  position: relative;
+}
+
+#hero .img {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/image1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+#hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.6rem;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.section1 .text {
+  width: 55%;
+}
+
+.section1 .text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  margin-left: 16%;
+  margin-top: 4%;
+}
+
+.section1 .text hr {
+  border: solid 1px #ce8d62;
+  width: 12%;
+  margin: 2% 16%;
+}
+
+.section1 .text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  width: 100%;
+  margin-left: 16%;
+  margin-top: 2%;
+}
+
+.section1 .text p {
+  font-size: 18px;
+  width: 100%;
+  margin-left: 16%;
+  margin-top: 3%;
+  line-height: 2.4;
+}
+
+.section1 .img {
+  background-image: url(../images/image7.png);
+  background-position: center;
+  background-size: cover;
+  width: 45%;
+  height: 400px;
+}
+
+.section2 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 200px;
+}
+
+.section2 .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.2rem;
+}
+
+.section2 hr {
+  width: 40%;
+  border: solid 1px #ce8d62;
+  margin: 0 auto 80px;
+}
+
+.section2 .row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section2 .col {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 36px;
+}
+
+.section2 .text {
+  width: 48%;
+  padding: 42px 48px;
+}
+
+.section2 h4 {
+  font-size: 20px;
+  font-weight: 1000;
+  color: thistle;
+  margin-bottom: 32px;
+}
+
+.section2 h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.section2 p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.2rem;
+}
+
+.section2 span {
+  background-color: #a06c4a;
+}
+
+.section2 .img {
+  background-position: center;
+  background-size: cover;
+  width: 45%;
+  height: 308px;
+}
+
+.section2 .img1 {
+  background-image: url(../images/image8.png);
+}
+
+.section2 .img2 {
+  background-image: url(../images/image9.png);
+}
+
+.section2 .img3 {
+  background-image: url(../images/image10.png);
+}
+
+.section3 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 200px;
+}
+
+.section3 .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.2rem;
+}
+
+.section3 .line {
+  width: 40%;
+  border: solid 1px #ce8d62;
+  margin: 0 auto 80px;
+}
+
+.section3 .raw {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 .raw hr {
+  width: 80%;
+  border: solid 1px thistle;
+  margin: 0 auto;
+}
+
+.section3 .col {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 18px 0;
+  padding: 0 20px;
+}
+
+.section3 .col h1 {
+  font-size: 64px;
+  font-weight: 2000;
+  margin-right: 30px;
+}
+
+.section3 .col h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}

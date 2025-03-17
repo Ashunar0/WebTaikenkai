@@ -98,9 +98,9 @@ main #hero p {
   margin: 20px 0;
 }
 
-main button {
+main #hero a {
   font-size: 18px;
-  padding: 20px 16px 24px 16px;
+  padding: 16px 24px;
   margin: 20px 0;
   background-color: #ce8d62;
   border: none;
@@ -110,7 +110,7 @@ main button {
   transition: 0.3s;
 }
 
-main button:hover {
+main #hero a:hover {
   background-color: thistle;
 }
 
@@ -200,9 +200,7 @@ main #business .col img {
 }
 
 main #news .container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 150px auto 150px;
+  margin-bottom: 150px;
 }
 
 main #news ul {
